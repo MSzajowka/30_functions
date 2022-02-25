@@ -3,6 +3,6 @@
 
 ## 1. Counting the n-degree square root from x.
 
-## 2. Finding the prime numbers
+## 2. Finding if the given number is a prime number.
 
 ## 3. 

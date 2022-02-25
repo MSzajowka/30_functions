@@ -6,13 +6,11 @@ def square():
     if not x.isdecimal() or not n.isdecimal():
         return ValueError
     else:
-        return int(x) ** (1/int(n))
+        return int(x) ** (1 / int(n))
+
+# TODO - unhash below
+# print(square())
 
 
-#print(square())
-
-
-
-
-
-#
+# 02. Finding if the given number is a prime number
+def find_prime_numbers():
