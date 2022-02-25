@@ -5,4 +5,4 @@
 
 ## 2. Finding if the given number is a prime number.
 
-## 3. 
+## 3. Rock, paper and the scisors
