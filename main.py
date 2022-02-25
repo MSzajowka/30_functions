@@ -34,64 +34,66 @@ def find_prime_numbers():
 # find_prime_numbers()
 
 
-# 3. Rock, paper and the scisors.
+# 3. Rock, paper and the scissors(you, oponent).
 from random import randint
 
+you = 0
+oponent = 0
 
-def scisors():
-    you = 0
-    oponent = 0
-    user = input("Choose: (R)ock, (P)aper or the (S)cisors: ")
+
+def scissors(you, oponent):
+    print(f'The current result is: YOU={you}, COMPUTER={oponent}')
+    user = input("\n\nChoose: (R)ock, (P)aper or the (S)cissors: ")
     print('\n')
     if user.lower() != 'r' and user.lower() != 'p' and user.lower() != 's':
-        print('You did not choose (R)ock, (P)aper or the (S)cisors! Try again.')
-        scisors()
-        return
+        print('You did not choose (R)ock, (P)aper or the (S)cissors! Try again.')
+        scissors(you, oponent)
+        return (you, oponent)
     else:
         computer = randint(1, 3)
         if computer == 1:
             computer = 'r'
-            print('Computer chose ROCK')
+            print('Computer chose ROCK.')
         elif computer == 2:
             computer = 'p'
-            print('Computer chose PAPER')
+            print('Computer chose PAPER.')
         else:
             computer = 's'
-            print('Computer chose SCISORS')
+            print('Computer chose SCISSORS.')
         if user == computer:
             print('Draw! You both chose the same.')
-            scisors()
-            return
+            scissors(you, oponent)
+            return (you, oponent)
         if user == 'r' and computer == 'p':
             print('You lose!')
             oponent += 1
-            scisors()
-            return
+            scissors(you, oponent)
+            return (you, oponent)
         elif user == 'r' and computer == 's':
             print('You WIN!')
             you += 1
-            scisors()
-            return
+            scissors(you, oponent)
+            return (you, oponent)
         if user == 'p' and computer == 's':
             print('You lose!')
             oponent += 1
-            scisors()
-            return
+            scissors(you, oponent)
+            return (you, oponent)
         elif user == 'p' and computer == 'r':
             print('You WIN!')
             you += 1
-            scisors()
-            return
+            scissors(you, oponent)
+            return (you, oponent)
         if user == 's' and computer == 'r':
             print('You lose!')
             oponent += 1
-            scisors()
-            return
+            scissors(you, oponent)
+            return (you, oponent)
         else:
             print('You WIN!')
             you += 1
-            scisors()
-            return
+            scissors(you, oponent)
+            return (you, oponent)
 
 
-scisors()
+scissors(you, oponent)
