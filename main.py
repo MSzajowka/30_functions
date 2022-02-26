@@ -170,5 +170,36 @@ def shuffle_words():
 
         print(f'{new_sentence.capitalize()}.')
 
+
 # TODO - unhash below line
 # shuffle_words()
+
+
+# 7. Qwerty. Who decided that 'a' is the first letter of latin alphabet? Who, when and why decided that 'b' will be second and 'z' the last one? Nobody knows that. Let's assume the alphabet looks different. That it starts with 'q', then there is 'w', 'e', 'r', 't' and 'y'. The last letter in the qwerty alphabet is 'm'. This function will sort the collection in the qwerty alphabetical order.
+def qwerty_sorted():
+    abc_string = input("Provide string to sort: ")
+    if abc_string.isnumeric():
+        print('Provide a non numeric string!')
+        return
+    else:
+        qwerty = 'qwertyuiopasdfghjklzxcvbnm'
+        abc_string = abc_string.replace(' ', '').lower()
+        qwerty_alphabet = {}
+        i = 0
+        for letter in qwerty:
+            qwerty_alphabet[i] = letter
+            i += 1
+        sorted_string = {}
+        for abc_letter in abc_string:
+            for occurrence in range(0, abc_string.count(abc_letter)):
+                keys = [key for key, value in qwerty_alphabet.items() if value == abc_letter]
+                idx = keys[0] * (occurrence + 10000)
+                sorted_string[idx] = abc_letter
+        # print(sorted_string)
+        # sorted_dict = sorted(sorted_string.keys())
+        # final = ''
+        # for sorted_letter in sorted_dict:
+        #     final += sorted_letter
+        # print(final)
+
+qwerty_sorted()

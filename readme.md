@@ -14,4 +14,5 @@
 
 ## 6. Shuffle words in a sentence.
 
-## 7. 
+## 7. Qwerty. Who decided that 'a' is the first letter of latin alphabet? Who, when and why decided that 'b' will be second and 'z' the last one? Nobody knows that. Let's assume the alphabet looks different. That it starts with 'q', then there is 'w', 'e', 'r', 't' and 'y'. The last letter in the qwerty alphabet is 'm'. This function will sort the collection in the qwerty alphabetical order.
+
