@@ -96,4 +96,28 @@ def scissors(you, oponent):
             return (you, oponent)
 
 
-scissors(you, oponent)
+# TODO - unhash below line
+# scissors(you, oponent)
+
+
+## 4. Check if word is a palindrome (read from start to end and oposite is the same).
+def check_palindrome():
+    string = input("Provide word to check: ")
+    if string.isnumeric():
+        print('You have not provide a word, but numeric value! ')
+    else:
+        string = list(string)
+        if string == string[::-1]:
+            string = ''.join(string)
+            print(f"Word {string} is a palindrome.")
+        # splited = list(string)
+        # print(splited)
+        # opposite = []
+        # for letter in len(splited):
+        #
+        else:
+            string = ''.join(string)
+            print(f"Word {string} is NOT a palindrome.")
+
+# TODO - unhash below line
+# check_palindrome()
