@@ -12,4 +12,6 @@
 ## 5. Snail climbing the pole
  - Snail claims the X m high pole Y cm each day and slides Z cm down each night (Y must be bigger than Z). Checking in how many days the snail will reach the top of a pole.
 
-## 6. 
+## 6. Shuffle words in a sentence.
+
+## 7. 

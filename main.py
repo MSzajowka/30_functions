@@ -1,3 +1,6 @@
+from random import randint, shuffle
+
+
 # 01. Counting the n-degree square root from x.
 
 def square():
@@ -35,7 +38,7 @@ def find_prime_numbers():
 
 
 # 3. Rock, paper and the scissors(you, oponent).
-from random import randint
+# from random import randint
 
 you = 0
 oponent = 0
@@ -146,5 +149,26 @@ def check_snail():
                 print(f"The snail will reach pole's top in {(pole - down - 1) // (up - down) + 1} day(s)")
 
 
-check_snail()
+# TODO - unhash below line
+# check_snail()
 
+# from random import shuffle
+
+
+# 6. Shuffle words in a sentence to receive a new funny sentence.
+def shuffle_words():
+    sentence = input("Provide sentence to shuffle words: ")
+    if sentence.isnumeric() or not (' ' in sentence):
+        print('Provide a non numeric string with words in it!')
+    else:
+        words = sentence.lower().split()
+        # old_words = words
+        # while words == old_words:
+        #     shuffle(words)
+        shuffle(words)
+        new_sentence = ' '.join(words)
+
+        print(f'{new_sentence.capitalize()}.')
+
+# TODO - unhash below line
+# shuffle_words()
