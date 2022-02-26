@@ -9,3 +9,7 @@
 
 ## 4. Check if word is a palindrome (read from start to end and opposite is the same).
 
+## 5. Snail climbing the pole
+ - Snail claims the X m high pole Y cm each day and slides Z cm down each night (Y must be bigger than Z). Checking in how many days the snail will reach the top of a pole.
+
+## 6. 

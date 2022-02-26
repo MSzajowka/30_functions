@@ -105,19 +105,46 @@ def check_palindrome():
     string = input("Provide word to check: ")
     if string.isnumeric():
         print('You have not provide a word, but numeric value! ')
+        return
     else:
         string = list(string)
         if string == string[::-1]:
             string = ''.join(string)
             print(f"Word {string} is a palindrome.")
-        # splited = list(string)
-        # print(splited)
-        # opposite = []
-        # for letter in len(splited):
-        #
         else:
             string = ''.join(string)
             print(f"Word {string} is NOT a palindrome.")
 
+
 # TODO - unhash below line
 # check_palindrome()
+
+
+# 5. Snail climbing the pole - Snail claims the X m high pole Y cm each day and slides Z cm down each night (Y must be bigger than Z). Checking in how many days the snail will reach the top of a pole.
+def check_snail():
+    pole = input("Provide the pole's height in meters: ")
+    up = input("Provide how many centimeters does the snail climb up each day: ")
+    down = input("Provide how many centimeters does the snail slide down each night (must be less then way up): ")
+
+    if not pole.isnumeric() or not up.isnumeric() or not down.isnumeric():
+        print('Some value is not numeric!')
+        return
+    else:
+        pole = float(pole)
+        pole = pole * 100
+        pole = int(pole)
+        up = int(up)
+        down = int(down)
+        if up <= down:
+            print("We're assuming the snail clims faster than slides down!")
+            return
+        else:
+            if pole <= up:
+                print("Snail will reach pole's top in (less than) one day :P")
+                return
+            else:
+                print(f"The snail will reach pole's top in {(pole - down - 1) // (up - down) + 1} day(s)")
+
+
+check_snail()
+
