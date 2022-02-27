@@ -265,7 +265,7 @@ def count_words(string):
 # print(count_words("To zdanie ma pięć wyrazów"))
 
 
-# 12. Count cost of travel of X distance by a car busing Y liters of fuel per 100 km, while liter of fuel costs Z.
+# 12. Count cost of travel of X distance by a car using Y liters of fuel per 100 km, while liter of fuel costs Z.
 def fuel_count(distance, burning, liter_cost):
     fuel_cost = (burning * distance / 100) * liter_cost
     overall = (burning, fuel_cost, liter_cost, distance)
@@ -318,4 +318,5 @@ def sad_or_happy():
     else:
         print('Well, you are sad. Sorry to hear that')
 
-sad_or_happy()
+# TODO - unhash the below line
+#sad_or_happy()
