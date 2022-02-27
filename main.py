@@ -209,7 +209,7 @@ def qwerty_sorted():
 
 '''
 +-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-
-FROM THIS MOMENT I LEARNED THAT IT'S BETTER TO PROVIDE 30 SIMPLE FUNCTIONS THAN LESS BUT MORE COMPLICATED.
+SUNDAY 15:47: FROM THIS MOMENT I LEARNED THAT IT'S BETTER TO PROVIDE 30 SIMPLE FUNCTIONS THAN LESS BUT MORE COMPLICATED. A LITTLE OVER AN HOUR TO THE DEADLINE...
 +-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-
 '''
 
@@ -291,5 +291,23 @@ def password_generator(length):
             password += str(chars[randint(0, len(chars) - 1)])
     return password
 
-print(password_generator(20))
+
+# TODO - remove hash from below line
+# print(password_generator(20))
+
+
+# 14. Stopper
+def stopper():
+    print('WARNING! This function will run until interrupted by a user!')
+    i = 0
+    while True:
+        i += 1
+        time.sleep(0.1)
+        print(i / 10)
+
+
+# TODO - unhash below line
+stopper()
+
+
 
