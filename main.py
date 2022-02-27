@@ -123,7 +123,7 @@ def check_palindrome():
 # check_palindrome()
 
 
-# 5. Snail climbing the pole - Snail claims the X m high pole Y cm each day and slides Z cm down each night (Y must be bigger than Z). Checking in how many days the snail will reach the top of a pole.
+# 5. Snail climbing the pole - Snail climbs the X m high pole Y cm each day and slides Z cm down each night (Y must be bigger than Z). Checking in how many days the snail will reach the top of a pole.
 def check_snail():
     pole = input("Provide the pole's height in meters: ")
     up = input("Provide how many centimeters does the snail climb up each day: ")
@@ -202,4 +202,62 @@ def qwerty_sorted():
         #     final += sorted_letter
         # print(final)
 
-qwerty_sorted()
+
+# TODO - unfinished function!
+# qwerty_sorted()
+
+'''
++-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-
+FROM THIS MOMENT I LEARNED THAT IT'S BETTER TO PROVIDE 30 SIMPLE FUNCTIONS THAN LESS BUT MORE COMPLICATED.
++-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-
+'''
+
+
+# 8. Celsius to Fahrenheit or opposite
+def degree_convert(degree, way):
+    if way == 'cf':
+        result = degree * 9 / 5 + 32
+
+    elif way == 'fc':
+        result = (5 / 9) * (degree - 32)
+    else:
+        result = 'Wrong conversion parameter!'
+    return result
+
+
+# TODO - unhasb below 4 lines
+# print('Sample values - 25 C convert to F: ')
+# print(degree_convert(25, 'cf'))
+# print('Sample values - 70 F convert to C: ')
+# print(degree_convert(77, 'fc'))
+
+
+# 9. Check if X is dividable by Y.
+def dividable_check(x, y):
+    if x % y == 0:
+        return 'dividable'
+    else:
+        return 'non dividable'
+
+
+# TODO - unhash below line
+# print(dividable_check(10, 2))
+
+
+# 10. Count letters in the sentence
+def count_letter(string):
+    string = string.replace(' ', '')
+    return len(string)
+
+
+# TODO - unhash below line
+# print(count_letter('To zdanie ma trzydzieści jeden liter'))
+
+
+# Count words in a sentence
+def count_words(string):
+    string = string.split()
+    return len(string)
+
+
+print(count_words("To zdanie ma pięć wyrazów"))
