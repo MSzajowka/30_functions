@@ -307,7 +307,15 @@ def stopwatch():
 
 
 # TODO - unhash below line
-stopwatch()
+# stopwatch()
 
 
+# 15. Tell is you're sad or happy
+def sad_or_happy():
+    user = input('Please tell me if you are :) or :(\n')
+    if user  == ':)' or user == ':-)' or user == '(:' or user == '(-:' :
+        print('Hey, you are happy! Nice')
+    else:
+        print('Well, you are sad. Sorry to hear that')
 
+sad_or_happy()
