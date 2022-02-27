@@ -296,8 +296,8 @@ def password_generator(length):
 # print(password_generator(20))
 
 
-# 14. Stopper
-def stopper():
+# 14. Stopwatch
+def stopwatch():
     print('WARNING! This function will run until interrupted by a user!')
     i = 0
     while True:
@@ -307,7 +307,7 @@ def stopper():
 
 
 # TODO - unhash below line
-stopper()
+stopwatch()
 
 
 

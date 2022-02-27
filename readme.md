@@ -26,9 +26,9 @@
 
 ## 12. Count cost of travel of X distance by a car busing Y liters of fuel per 100 km, while liter of fuel costs Z.
 
-## 13. Pasword generator
+## 13. Password generator
 
-## 14. Stopper
+## 14. Stopwatch
 
 ## 15. 
 
