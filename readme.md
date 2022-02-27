@@ -24,6 +24,9 @@
 
 ## 11. Count number of words in a sentence
 
+## 12. Count cost of travel of X distance by a car busing Y liters of fuel per 100 km, while liter of fuel costs Z.
+
+## 13. Pasword generator
 
 
 

@@ -1,4 +1,5 @@
 from random import randint, shuffle
+import time
 
 
 # 01. Counting the n-degree square root from x.
@@ -254,10 +255,41 @@ def count_letter(string):
 # print(count_letter('To zdanie ma trzydzieści jeden liter'))
 
 
-# Count words in a sentence
+# 11. Count words in a sentence
 def count_words(string):
     string = string.split()
     return len(string)
 
 
-print(count_words("To zdanie ma pięć wyrazów"))
+# TODO - unhash below line
+# print(count_words("To zdanie ma pięć wyrazów"))
+
+
+# 12. Count cost of travel of X distance by a car busing Y liters of fuel per 100 km, while liter of fuel costs Z.
+def fuel_count(distance, burning, liter_cost):
+    fuel_cost = (burning * distance / 100) * liter_cost
+    overall = (burning, fuel_cost, liter_cost, distance)
+    return (overall)
+
+
+# TODO - unhash below two lines
+overall = fuel_count(1000, 7.5, 5.80)
+print(
+    f'The trip at a distance of {overall[3]} in a car burning {overall[0]} liters per 100 km will cost {overall[1]} PLN with the cost of {overall[2]} PLN per liter.')
+
+
+# 13. Password generator
+def password_generator(length):
+    chars = 'abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ!@$%^&*()_+-=<>,./?;:[{]}\|'
+    chars = list(chars)
+    password = ''
+
+    for iterate in range(0, length):
+        if randint(1, 2) % 2 == 0:
+            password += str(randint(0, 9))
+        else:
+            password += str(chars[randint(0, len(chars) - 1)])
+    return password
+
+print(password_generator(20))
+
