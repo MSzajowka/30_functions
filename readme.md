@@ -1,4 +1,4 @@
-# The 30 functions for learning purposes
+# The 30 functions for learning purposes.
 
 
 ## 1. Counting the n-degree square root from x.
